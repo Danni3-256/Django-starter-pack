@@ -1,4 +1,5 @@
 Django Starter Pack
+
 Welcome to my Django Starter Pack! This repository serves as a basic foundation for getting started with Django, the popular Python web framework. 
 
 Getting Started
