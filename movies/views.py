@@ -1,25 +1,6 @@
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from .models import Movie
-
-# data = {'movies': [
-#             {
-#                 'id': 5,
-#                 'title': 'Jaws',
-#                 'Year': 1969,
-#             },
-#             {
-#                 'id': 6,
-#                 'title': 'Sharknado',
-#                 'Year': 1980,
-#             },
-#             {
-#                 'id': 7,
-#                 'title': 'The Meg',
-#                 'Year': 2018
-#             }
-#         ]
-# }
 
 def movies(request):
     data = Movie.objects.all()
@@ -43,4 +24,7 @@ def add(request):
 
         return HttpResponseRedirect('/movies/')
     return render(request, 'movies/add.html')
-    
+
+def delete(request, id):
+    Movie.objects.get(pk=id).delete()
+    return HttpResponseRedirect('/movies/')
