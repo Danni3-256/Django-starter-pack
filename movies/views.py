@@ -27,9 +27,9 @@ def movies(request):
     return render(request, 'movies/movies.html', {'movies': data})
 
 def home(request):
-    return HttpResponse("Home Page")
+    return render(request, 'movies/home.html')
 
-def detail(request):
+def detail(request, id):
     data = Movie.objects.get(pk=id)
     return render(request, 'movies/detail.html', {'movie': data})
 
@@ -40,6 +40,7 @@ def add(request):
     if title and year:
         movie = Movie(title=title, year=year)
         movie.save()
-        return HttpResponseRedirect('movies/')
+
+        return HttpResponseRedirect('/movies/')
     return render(request, 'movies/add.html')
     

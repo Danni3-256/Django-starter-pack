@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for styling -->
+    <style>
+        /* Custom styles for the header */
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+        /* Custom styles for movie cards */
+        .movie-card {
+            margin: 20px;
+        }
+        /* Custom styles for the footer */
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Movie Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'movies' %}">Movies</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Movie Cards Section -->
+    <div class="container">
+        <h1 class="mt-4 mb-4">Movie Genres</h1>
+        <div class="row">
+            <!-- Movie Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card movie-card">
+                    <!-- <img src="movie1.jpg" class="card-img-top" alt="Movie 1"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Adventure</h5>
+                        <p class="card-text">Explorers an Epic journey, seeking hidden treasures in the heart of the Amazon rainforest.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card movie-card">
+                    <!-- <img src="movie2.jpg" class="card-img-top" alt="Movie 2"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Action</h5>
+                        <p class="card-text">High-octane chase scenes and explosive battles in a modern metropolis.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more movie cards here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Movie Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS and jQuery scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
