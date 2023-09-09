@@ -1,10 +1,10 @@
-Django Starter Pack
+Django Starter Pack Project
 
-Welcome to my Django Starter Pack! This repository serves as a basic foundation for getting started with Django, the popular Python web framework. 
+Welcome to my Django Starter Pack Project! This repository serves as my basic foundation for getting familiar with Django, the popular Python web framework. 
 
 Getting Started
 
-Follow these steps to set up your Django project using this starter pack:
+Follow these steps to set up your Django project:
 
 Clone the Repository: Start by cloning this repository to your local machine using Git.
 
