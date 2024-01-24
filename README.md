@@ -1,16 +1,17 @@
-Django Starter Pack Project
+## Django Starter Pack Project
 
 Welcome to my Django Starter Pack Project! This repository serves as my basic foundation for getting familiar with Django, the popular Python web framework. 
 
-Getting Started
+#### Getting Started
 
-Follow these steps to set up your Django project:
+#### Follow these steps to set up your Django project:
 
-Clone the Repository: Start by cloning this repository to your local machine using Git.
+#### Clone the Repository: 
+Start by cloning this repository to your local machine using Git.
 
 git clone https://github.com/your-username/django-starter-pack.git
 
-Create a Virtual Environment: 
+#### Create a Virtual Environment: 
 It's a good practice to work within a virtual environment to manage dependencies. Create a new virtual environment with your preferred tool (e.g., venv or virtualenv).
 
 # Using venv (Python 3.x)
